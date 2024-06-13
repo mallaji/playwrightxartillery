@@ -1,0 +1,20 @@
+{
+    "userid": "//input[@id='username']",
+    "passid": "//input[@id='password']",
+    "subid": "//button[normalize-space()='Login']",
+    "startid" : ".btn.btn-primary.mb-3",
+    "startbutton": "//body[1]/div[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[3]/div[2]/table[1]/tbody[1]/tr[9]/td[3]/div[1]/a[1]",
+    "pagebutid" : "//a[@class='paginate_button current']",
+    "blockid" : "//a[@href='https://gibl-pm38.server247.info/index.php/start/case/43604805465e809ac5d58b5016981935/63998312565e809ac7cac73094590586']",
+    "iframe": "//iframe[@id='iFrame1']",
+    "search": "//input[@type='search']",
+    "blockuid": "//a[@href='https://bpmuat-gibl-bankadmin.gibl.com.np/index.php/start/case/43604805465e809ac5d58b5016981935/63998312565e809ac7cac73094590586']",
+    "palceholder": "Search by Process Name or Task Name",
+    "acc_num" : "input[placeholder='Account Number']",
+    "mobile_num" : "input[placeholder='Mobile Number']",
+    "iframes": "//iframe[@name='openCaseFrame']",
+    "dropdowns" : "//span[@id='select2-formreason-container']",
+    "ul" : "//ul[@class='select2-results__options']",
+    "li" : "//li[contains(@class, 'select2-results__option') and text()='Misplaced']",
+    "submit": "//button[@type='submit']"
+}

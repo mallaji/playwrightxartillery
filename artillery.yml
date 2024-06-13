@@ -1,0 +1,24 @@
+config:
+  target: "https://gibl-pm38.server247.info/login"  # The target URL for the tests
+  engines:
+    playwright:
+      launchOptions:
+        headless: true  # Run the browser in headless mode
+  processor: "./gibl/artillery/login.js"  # Path to the script to be executed
+  phases:
+    # - name: constantArrival
+    #   duration: 10  # Duration of 10 seconds
+    #   arrivalRate: 1  # 1 user per second
+    # - name: pause  # Pause phase
+    #   pause: 1  # Pause for 1 second
+    # - name: rampUp
+    #   duration: 10  # Duration of 10 seconds
+    #   arrivalRate: 1  # Start at 1 user per second
+    #   rampTo: 15  # Ramp up to 15 users per second
+    - name: FixedArrival
+      duration: 10  # Duration of 10 seconds
+      arrivalCount: 15  # 15 users in total during this phase
+scenarios:
+    - name: Milan Malla
+      engine: playwright
+      testFunction: "artilleryScript"  # The function in the script to be executed

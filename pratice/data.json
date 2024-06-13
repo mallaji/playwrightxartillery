@@ -1,0 +1,29 @@
+[
+    {
+    "id": 1,
+    "firstname": "Test Malla",
+    "lastname": "Malla Test",
+    "email": "test@yopmail.com",
+    "age": "25",
+    "salary": "50000",
+    "department": "QA Department"
+    },
+    {
+    "id": 2,
+    "firstname": "Tester",
+    "lastname": "Malla Test",
+    "email": "test@yopmail.com",
+    "age": "25",
+    "salary": "50000",
+    "department": "QA Department"
+    },
+    {
+    "id": 3,
+    "firstname": "Yes Yes ",
+    "lastname": "Malla Test",
+    "email": "test@yopmail.com",
+    "age": "25",
+    "salary": "50000",
+    "department": "QA Department"
+    }
+]
