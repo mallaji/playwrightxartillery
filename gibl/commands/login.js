@@ -1,7 +1,7 @@
 const ele = require("../elements.json");
 
 const dotenv = require('dotenv');
-const env = process.env.NODE_ENV || 'test';
+const env = process.env.NODE_ENV || 'prod';
 dotenv.config({ path: `./env/.env.${env}` });
 
 async function login(page) {
