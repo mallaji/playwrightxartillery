@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 const LoginPage = require('../pages/orangelogin');
 
-test.use({ headless: true }); // Set the browser to run in headless mode
+test.use({ headless: false }); // Set the browser to run in headless mode
 
 test("Valid Login", async function({ page }) {
     const loginPage = new LoginPage(page);
