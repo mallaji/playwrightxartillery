@@ -1,11 +1,12 @@
 const { test, expect } = require('@playwright/test');
-const LoginPage = require('../pages/orangelogin')
+const LoginPage = require('../pages/orangelogin');
 
 test("Valid Login", async function({ page }) {
-    await page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-    const loginPage = new LoginPage(page)
-    await loginPage.login()
-    await expect(page).toHaveURL(/dashboard/)
-})
+    const loginPage = new LoginPage(page);
+    await loginPage.navigate();
+    await loginPage.login('Admin', 'admin123'); // Add the user credentials for username and password
+    await expect(page).toHaveURL(/dashboard/);
+});
+
 
 
