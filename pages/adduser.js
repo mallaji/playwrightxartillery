@@ -9,7 +9,7 @@ class Adduser {
         this.adminid = "//a[@class='oxd-main-menu-item' and @href='/web/index.php/admin/viewAdminModule']//span[text()='Admin']";
         this.subidSelector = "//button[contains(@class, 'oxd-button--main') and contains(@class, 'orangehrm-login-button')]";
     }
-    
+
     async login(username, password) {
         await this.page.fill(this.useridSelector, username, { delay: 70 });
         await this.page.fill(this.passidSelector, password, { delay: 70 });
