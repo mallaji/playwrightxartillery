@@ -14,7 +14,13 @@ class Adduser {
     }
 
     async verifyaddusertitle(){
-        await expect(this.page.locator(this.addusertitle)).toBeVisible()
+        //await expect(this.page.locator(this.addusertitle)).toBeVisible()
+        try {
+            await expect(this.page.locator(this.addusertitle)).toBeVisible();
+        } catch (error) {
+            console.error("Add User title is not visible:", error);
+            throw error; 
+        }
     }
 
     async addadmin() {
