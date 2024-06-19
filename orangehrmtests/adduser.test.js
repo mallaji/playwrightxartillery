@@ -7,8 +7,11 @@ const Adduser = require('../pages/adduser')
 test("Add Admin User", async function({ page }) {
     const loginPage = new LoginPage(page);
     await loginPage.navigate();
-    await loginPage.login('Admin', 'admin123'); // Add the user credentials for username and password
-    await expect(page).toHaveURL(/dashboard/);
+    await loginPage.login('Admin', 'admin123');
+
+    await loginPage.verifylogin();
+
+    //await expect(page).toHaveURL(/dashboard/);
 
     // Add Admin
     const adduser= new Adduser(page);

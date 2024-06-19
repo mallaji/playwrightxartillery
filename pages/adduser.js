@@ -20,8 +20,7 @@ class Adduser {
     async addadmin() {
         await this.page.click(this.adminid);
         await this.page.click(this.addbuttonid);
-        await this.page.pause();
-        //await this.page.click(this.subidSelector);
+        //await this.page.pause();
     }
 }
 

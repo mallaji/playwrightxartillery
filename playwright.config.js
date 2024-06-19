@@ -21,6 +21,8 @@ module.exports = defineConfig({
   //retries: 1,
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 1 : undefined,
+  // Directory for baseline screenshots
+  snapshotDir: './screenshots',
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [["html"], ["allure-playwright"]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
@@ -30,6 +32,7 @@ module.exports = defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: 'only-on-failure', // Capture screenshots only on test failure
   },
 
   /* Configure projects for major browsers */

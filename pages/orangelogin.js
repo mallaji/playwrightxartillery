@@ -1,3 +1,4 @@
+const {expect} = require("@playwright/test")
 const dotenv = require('dotenv');
 const env = process.env.NODE_ENV || 'dev';
 dotenv.config({ path: `./env/.env.${env}` });
@@ -19,6 +20,10 @@ class LoginPage {
         await this.page.fill(this.useridSelector, username, { delay: 70 });
         await this.page.fill(this.passidSelector, password, { delay: 70 });
         await this.page.click(this.subidSelector);
+    }
+
+    async verifylogin(){
+        await expect(this.page).toHaveScreenshot('image.png');
     }
 }
 
