@@ -11,9 +11,9 @@ const { defineConfig, devices } = require('@playwright/test');
  * @see https://playwright.dev/docs/test-configuration
  */
 module.exports = defineConfig({
-  testDir: './apitest',
+  testDir: './orangehrmtests',
   /* Run tests in files in parallel */
-  fullyParallel: false,
+  fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
@@ -37,12 +37,24 @@ module.exports = defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // {
+    //   name: 'chromium',
+    //   use: { ...devices['Desktop Chrome']
+    //   ,screenshot:"off",
+    //   video:"off",
+    // trace:"off" },
+    // },
     {
-      name: 'chromium',
-      use: { ...devices['Desktop Chrome']
-      ,screenshot:"off",
-      video:"off",
-    trace:"off" },
+      name: 'iPhone 12',
+      use: {
+        ...devices['iPhone 12'],
+      },
+    },
+    {
+      name: 'Pixel 5',
+      use: {
+        ...devices['Pixel 5'],
+      },
     },
 
     // {

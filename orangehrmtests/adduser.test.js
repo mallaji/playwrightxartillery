@@ -20,6 +20,3 @@ test("Add Admin User", async function({ page }) {
     //Verify 
     await adduser.verifyaddusertitle()
 });
-
-
-

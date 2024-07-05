@@ -6,7 +6,7 @@ dotenv.config({ path: `./env/.env.${env}` });
 class LoginPage {
     constructor(page) {
         this.page = page;
-        this.url = process.env.BASEURL; // Use environment variable for URL
+        this.url = process.env.BASEURL; // Use of environment variable for URL
         this.useridSelector = "//input[@name='username']";
         this.passidSelector = "//input[@class='oxd-input oxd-input--active' and @type='password' and @name='password' and @placeholder='Password']";
         this.subidSelector = "//button[contains(@class, 'oxd-button--main') and contains(@class, 'orangehrm-login-button')]";
