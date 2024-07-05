@@ -14,7 +14,6 @@ test("Empty Form Submission", async function({ page }) {
     expect(errorMessage.trim()).toBe("Required"); 
 });
 
-
 test("Invalid Username and Valid Password", async function({ page }) {
     await login(page, "test", "admin123");
     const errorMessage = await page.locator(".oxd-alert-content.oxd-alert-content--error").textContent(); // Get error message
