@@ -32,9 +32,18 @@ class LoginPage {
         }
     }
 
-    async verifylogin() {
+    // async verifylogin() {
+    //     try {
+    //         await expect(this.page).toHaveScreenshot('image.png');  
+    //     } catch (error) {
+    //         const timestamp = new Date().toISOString();
+    //         console.error("Error occurred while verifying login:", error);
+    //         throw new Error(`Verification of login failed at ${timestamp}. Error: ${error.message}`);
+    //     }
+    async verifyLogin(deviceName) {
         try {
-            await expect(this.page).toHaveScreenshot('image.png');  
+            const screenshotPath = `screenshots/${deviceName}_login.png`;
+            await expect(this.page).toHaveScreenshot(screenshotPath);
         } catch (error) {
             const timestamp = new Date().toISOString();
             console.error("Error occurred while verifying login:", error);
