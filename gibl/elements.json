@@ -17,7 +17,8 @@
     "ul" : "//ul[@class='select2-results__options']",
     "li" : "//li[contains(@class, 'select2-results__option') and text()='Misplaced']",
     "submit": "//button[@type='submit']",
-    "main_menu": "//button[@data-bs-target='#mainNavSidebar']",
-    "search1": "//input[@class='form-control']",
-    "process_reports": "//span[@class='menu-text' and text()='Process Reports']"
+    "main_menu": "button.btn.btn-danger.rounded.text-white",
+    "search1": "//input[@id='menu-search']",
+    "process_reports": "//span[@class='menu-text' and text()='Process Reports']",
+    "unassignedclick": "//a[@class='dashboard-info__item-card']//span[text()='Unassigned']"
 }
