@@ -19,6 +19,5 @@
     "submit": "//button[@type='submit']",
     "main_menu": "button.btn.btn-danger.rounded.text-white",
     "search1": "//input[@id='menu-search']",
-    "process_reports": "//span[@class='menu-text' and text()='Process Reports']",
-    "unassignedclick": "//a[@class='dashboard-info__item-card']//span[text()='Unassigned']"
+    "process_reports": "//span[@class='menu-text' and text()='Process Reports']"
 }

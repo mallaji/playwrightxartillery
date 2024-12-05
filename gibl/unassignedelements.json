@@ -1,0 +1,5 @@
+{
+    "unassignedclick": "//a[@class='dashboard-info__item-card']//span[text()='Unassigned']",
+    "unassignedsearch": "//input[@id='custom-search']",
+    "claimbutton": "//a[contains(@class, 'claim-case-action')]"
+}
